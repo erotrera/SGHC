@@ -3,10 +3,10 @@ Sistema de Gestión de Historias Clinicas
 
 # Tecnologías:
 Lenguaje de programación: Java </br>
-Framework: JSF 2. </br>
-JDK: openJDK 8. </br>
+Framework: Jakarta Faces 4.0 </br>
+JDK: openJDK 11. </br>
 IDE: Netbeans. </br>
-Servidor web: Apache tomcat v9.0.64 </br>
+Servidor web: Apache tomcat v10.1.20 </br>
 
 
 # Librerias:

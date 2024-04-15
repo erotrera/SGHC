@@ -2,7 +2,7 @@
 package pruebas;
 
 import java.sql.Date;
-import javax.persistence.*;
+import jakarta.persistence.*;
 import org.apache.logging.log4j.*;
 import sghc.dominio.Personal;
 
