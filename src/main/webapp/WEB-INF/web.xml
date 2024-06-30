@@ -4,24 +4,32 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
       
-    <session-config>
-        <session-timeout>
-            30
-        </session-timeout>
-    </session-config>
+    <display-name>SGHC - Sistema de Gestión de Historias Clinicas</display-name>
     
-    <servlet>
-        <servlet-name>Faces Servlet</servlet-name>
-        <servlet-class>jakarta.faces.webapp.FacesServlet</servlet-class>
         
+    <servlet>
+        <!--Ejemplo uso de comentarios.--> 
+        <servlet-name>Faces Servlet</servlet-name> <!--Aquí se especifica un nombre para el servlet. En este caso, se llama “Faces Servlet”. Este nombre se utiliza para mapear el servlet a una URL específica.-->  
+        <servlet-class>jakarta.faces.webapp.FacesServlet</servlet-class> <!-- Indica la clase Java que implementa el servlet. En este caso,jakarta.faces.webapp.FacesServlet es la clase que maneja las solicitudes relacionadas con Jakarta Server Faces 3.0 -->          
     </servlet>
+    
     <servlet-mapping>
+        <!--Ejemplo uso de comentarios.-->        
         <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/SGHC/*</url-pattern>
+        <!--
         <url-pattern>*.xhtml</url-pattern>
+        -->
     </servlet-mapping>
 
     <welcome-file-list>
         <welcome-file>index.xhtml</welcome-file>
     </welcome-file-list>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
     
 </web-app>
